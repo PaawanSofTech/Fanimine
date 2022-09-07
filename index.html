@@ -482,7 +482,8 @@
                                             <!-- col end -->
                                             <div class="col-lg-6">
                                                 <div class="form-group app-label">
-                                                    <input type="tel" id="phone" name="phone" pattern="[+][0-9]{2,3}-[0-9]{10}" class="form-control" placeholder="Mob. No." required> <small>Format: +(Iso Code)-1234567890</small>
+
+                                                    <input type="tel" id="phone" name="phone" pattern="[+][0-9]{2,3}-[0-9]{10}" class="form-control" placeholder="Mob. No." required> <small class="text-muted font-weight-normal f-5 ">(Format: +00-1234567890)</small> 
 
                                                 </div>
                                             </div>
@@ -503,8 +504,8 @@
       <!-- return urls can be fully qualified -OR-
          start with / for root relative -OR-
          start with . for url relative --> 
-    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
-    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+    <input type="hidden" name="success_url" value="." />
+    <input type="hidden" name="error_url" value="." />
 
                                             <!-- col end -->
                                         </div>
@@ -652,28 +653,6 @@
     <!-- Main Js -->
     <script src="js/app.js"></script>
     <script src="js/jscontact.js"></script>
-
-<script>
-
-function validate(evt) {
-  var theEvent = evt || window.event;
-
-  // Handle paste
-  if (theEvent.type === 'paste') {
-      key = event.clipboardData.getData('text/plain');
-  } else {
-  // Handle key press
-      var key = theEvent.keyCode || theEvent.which;
-      key = String.fromCharCode(key);
-  }
-  var regex = /[0-9]|\./;
-  if( !regex.test(key) ) {
-    theEvent.returnValue = false;
-    if(theEvent.preventDefault) theEvent.preventDefault();
-  }
-}>
-
-</script>
 
     <script>
         //owlCarousel
