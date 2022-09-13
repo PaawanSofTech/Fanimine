@@ -4,7 +4,7 @@ body{
 
 .follow ul{
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     padding: 0;
     margin: 0;
@@ -18,8 +18,8 @@ body{
 }
 
 .follow ul li .fab{
-    font-size: 50px;
-    line-height: 80px;
+    font-size: 30px;
+    line-height: 60px;
     transition: .3s;
     color: #000;
 }
@@ -31,8 +31,8 @@ body{
 .follow ul li a{
     position: relative;
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: #fff;
     text-align: center;
@@ -57,6 +57,6 @@ body{
     background-color: #0077b6;
 }
 .follow ul li:nth-child(5) a:hover{
-    background-color: #c4502b;
+    background-color: #c4302b;
  
 }
